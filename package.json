@@ -1,11 +1,45 @@
 {
-  "name": "temp",
-  "version": "0.1.0",
+  "name": "zero-vue2",
+  "version": "1.0.0",
+  "description": "zero-vue2系统",
   "private": true,
+  "author": "zero",
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "local": "vue-cli-service serve --mode local",
+    "dev": "vue-cli-service serve --mode dev",
+    "front": "vue-cli-service serve --mode front",
+    "build:prod": "vue-cli-service build --mode prod",
+    "build:stage": "vue-cli-service build --mode stage",
+    "build:dev": "vue-cli-service build --mode dev",
+    "build:static": "vue-cli-service build --mode static",
+    "preview": "node build/index.js --preview",
+    "lint": "eslint --ext .js,.vue src",
+    "clean": "rimraf node_modules"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "vue",
+    "admin",
+    "dashboard",
+    "element-ui",
+    "boilerplate",
+    "admin-template",
+    "management-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Micro-Organism/Zero-Vue2.git"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -19,6 +53,10 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3"
+  },
+  "engines": {
+    "node": ">= 10.13.0",
+    "npm": ">= 5.0.0"
   },
   "eslintConfig": {
     "root": true,

@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+<!--    <img alt="Vue logo" src="./assets/logo.png">-->
+<!--    <hello-world msg="Welcome to Your Vue.js App"/>-->
+    <basic-element />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/views/zero/HelloWorld.vue'
+import BasicElement from "@/views/element/basic/BasicElement.vue";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {BasicElement, HelloWorld }
 }
 </script>
 

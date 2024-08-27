@@ -1,21 +1,21 @@
 {
-  "name": "zero-vue2",
+  "name": "zero-vue2-js",
   "version": "1.0.0",
   "description": "zero-vue2系统",
   "private": true,
   "author": "zero",
   "license": "MIT",
   "scripts": {
-    "local": "vue-cli-service serve --mode local",
-    "dev": "vue-cli-service serve --mode dev",
-    "front": "vue-cli-service serve --mode front",
-    "build:prod": "vue-cli-service build --mode prod",
-    "build:stage": "vue-cli-service build --mode stage",
-    "build:dev": "vue-cli-service build --mode dev",
-    "build:static": "vue-cli-service build --mode static",
+    "local": "../node_modules/.bin/vue-cli-service serve --mode local",
+    "dev": "../node_modules/.bin/vue-cli-service serve --mode dev",
+    "front": "../node_modules/.bin/vue-cli-service serve --mode front",
+    "build:prod": "../node_modules/.bin/vue-cli-service build --mode prod",
+    "build:stage": "../node_modules/.bin/vue-cli-service build --mode stage",
+    "build:dev": "../node_modules/.bin/vue-cli-service build --mode dev",
+    "build:static": "../node_modules/.bin/vue-cli-service build --mode static",
     "preview": "node build/index.js --preview",
-    "lint": "eslint --ext .js,.vue src",
-    "clean": "rimraf node_modules"
+    "lint": "../node_modules/.bin/eslint --ext .js,.vue src",
+    "clean": "../node_modules/.bin/rimraf node_modules"
   },
   "husky": {
     "hooks": {

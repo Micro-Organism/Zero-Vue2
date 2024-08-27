@@ -1,6 +1,6 @@
 import Vue from 'vue';
 // import { createApp } from 'vue';
-import App from './App';
+import App from './App.vue';
 import Cookies from 'js-cookie';
 import Element from 'element-ui';
 import '@/assets/styles/element-variables.scss';
